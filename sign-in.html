@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In | Sky Bridge Technologies</title>
+    <meta name="description" content="Sign in to your Sky Bridge Technologies account.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="auth-page">
+        <div class="auth-bg-accent"></div>
+        <div class="auth-bg-accent-2"></div>
+
+        <header class="navbar-header" id="main-nav">
+            <nav class="container nav-content">
+                <div class="logo">
+                    <a href="index.html" class="logo-link">
+                        <span class="logo-icon"><i class="fas fa-bridge"></i></span>
+                        <span class="logo-text">SkyBridge</span>
+                    </a>
+                </div>
+
+                <div class="nav-actions">
+                    <a href="index.html" class="btn btn-outline">Back to Home</a>
+                </div>
+            </nav>
+        </header>
+
+        <main class="auth-container">
+            <div class="auth-header">
+                <h1 class="auth-title">Welcome Back</h1>
+                <p>Enter your credentials to access your account</p>
+            </div>
+
+            <form id="signin-form" novalidate>
+                <div class="form-group">
+                    <label for="email" class="form-label">Email or Username</label>
+                    <div class="form-input-wrapper">
+                        <input type="text" id="email" class="form-input" placeholder="name@example.com" required>
+                    </div>
+                    <div class="error-message" id="email-error">Please enter a valid email or username.</div>
+                </div>
+
+                <div class="form-group">
+                    <label for="password" class="form-label">Password</label>
+                    <div class="form-input-wrapper">
+                        <input type="password" id="password" class="form-input" placeholder="••••••••" required>
+                        <i class="fas fa-eye password-toggle" id="toggle-password"></i>
+                    </div>
+                    <div class="error-message" id="password-error">Password must be at least 6 characters.</div>
+                </div>
+
+                <div class="form-options">
+                    <label class="remember-me">
+                        <input type="checkbox" id="remember">
+                        <span>Remember me</span>
+                    </label>
+                    <a href="#" class="forgot-password">Forgot Password?</a>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-auth">Sign In</button>
+
+                <div class="auth-footer">
+                    <p>Don't have an account? <a href="sign-up.html">Sign Up</a></p>
+                    <div class="gdpr-note">
+                        By signing in, you agree to our <a href="cookie-policy.html">Privacy Policy</a> and Term of
+                        Service.
+                    </div>
+                </div>
+            </form>
+        </main>
+    </div><!-- /.auth-page -->
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-top">
+                <!-- Column 1: Brand -->
+                <div class="footer-column footer-brand">
+                    <div class="logo">
+                        <a href="index.html" class="logo-link">
+                            <span class="logo-icon"><i class="fas fa-bridge"></i></span>
+                            <span class="logo-text white-text">SkyBridge</span>
+                        </a>
+                    </div>
+                    <p>Bridging the gap between vision and reality with precision engineering.</p>
+                </div>
+
+                <!-- Column 2: Quick Links -->
+                <div class="footer-column">
+                    <h4 class="footer-col-title">Navigate</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html" class="footer-link">Home</a></li>
+                        <li><a href="index.html#services" class="footer-link">Services</a></li>
+                        <li><a href="about.html" class="footer-link">About</a></li>
+                        <li><a href="contact.html" class="footer-link">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Contact Info -->
+                <div class="footer-column">
+                    <h4 class="footer-col-title">Get In Touch</h4>
+                    <div class="footer-contact">
+                        <div class="footer-contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>ArcherJustice@gmail.com</span>
+                        </div>
+                        <div class="footer-contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>0598348917</span>
+                        </div>
+                        <div class="footer-contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>123 Innovation Way, Brent<br>Greater London, UK</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Sky Bridge Technologies. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#" class="footer-bottom-link">Privacy Policy</a>
+                    <a href="#" class="footer-bottom-link">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
